@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frutinhas em Festa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-icon">🍓</span>
+        <div>
+          <p class="eyebrow">DESAFIO DA</p>
+          <h1>Frutinhas em Festa</h1>
+        </div>
+      </div>
+      <button id="soundButton" class="icon-button" aria-label="Ativar ou desativar sons">🔊</button>
+    </header>
+
+    <section class="hud" aria-label="Informações do jogo">
+      <div class="hud-card target-card">
+        <span class="hud-label">PEGUE APENAS</span>
+        <strong id="targetFruit" class="target-fruit">🍎 Maçã</strong>
+      </div>
+      <div class="hud-card">
+        <span class="hud-label">PONTOS</span>
+        <strong id="score">0</strong>
+      </div>
+      <div class="hud-card lives-card">
+        <span class="hud-label">VIDAS</span>
+        <strong id="lives" aria-live="polite">❤️❤️❤️❤️❤️</strong>
+      </div>
+      <div class="hud-card">
+        <span class="hud-label">RODADA</span>
+        <strong id="round">1 / 3</strong>
+      </div>
+      <div class="hud-card timer-card">
+        <span class="hud-label">TEMPO</span>
+        <strong id="timer">01:00</strong>
+      </div>
+    </section>
+
+    <section class="canvas-wrap">
+      <canvas id="gameCanvas" width="900" height="560" aria-label="Área do jogo de frutas"></canvas>
+      <div id="startOverlay" class="overlay">
+        <div class="overlay-card">
+          <div class="big-emoji">🍎 🍌 🍇</div>
+          <h2>Vamos brincar?</h2>
+          <p>As frutas vão cair. Mova o mouse para levar a cestinha até a fruta pedida!</p>
+          <button id="startButton" class="primary-button">Começar jogo</button>
+        </div>
+      </div>
+      <div id="gameOverOverlay" class="overlay hidden">
+        <div class="overlay-card">
+          <div class="big-emoji">🌟</div>
+          <h2>Fim de jogo!</h2>
+          <p>Você fez <strong id="finalScore">0</strong> pontos.</p>
+          <button id="restartButton" class="primary-button">Jogar novamente</button>
+        </div>
+      </div>
+      <div id="roundOverlay" class="overlay hidden">
+        <div class="overlay-card">
+          <div class="big-emoji">🎉 🧺 🎉</div>
+          <h2 id="roundMessage">Próxima rodada!</h2>
+          <p>Prepare-se: a velocidade vai aumentar!</p>
+          <button id="nextRoundButton" class="primary-button">Começar rodada</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="instructions">
+      <span>🖱️ Mova o mouse</span>
+      <span>🧺 Posicione a cestinha</span>
+      <span>💖 Pegue só as corretas</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
