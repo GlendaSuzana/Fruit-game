@@ -16,34 +16,10 @@ Um jogo infantil feito com HTML, Canvas e JavaScript. As frutas caem na tela e o
 - Tema noturno na terceira rodada.
 - Sons de acerto e erro com opção para ativar ou desativar.
 
-## Como executar
-
-### Usando Python
-
-Com o Python instalado, abra o terminal nesta pasta e execute:
-
-```bash
-python -m http.server 8000
-```
-
-Depois, acesse:
-
-```text
-http://localhost:8000
-```
-
-### Usando Live Server no VS Code
-
-1. Instale a extensão **Live Server**, de Ritwick Dey.
-2. Abra a pasta do projeto no VS Code.
-3. Abra o arquivo `index.html`.
-4. Clique com o botão direito e escolha **Open with Live Server**.
-
-O endereço normalmente será `http://127.0.0.1:5500`.
-
-## Arquivos do projeto
+## Arquivos e tecnologias do projeto
 
 - `index.html`: estrutura da página e interface do jogo.
 - `styles.css`: estilos, layout e responsividade.
 - `script.js`: regras, rodadas, pontuação, vidas, frutas e Canvas.
 - `.gitignore`: arquivos que não devem ser enviados ao Git.
+
